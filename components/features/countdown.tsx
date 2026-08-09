@@ -31,7 +31,7 @@ export default function Countdown() {
     )
 
     return (
-        <div className="flex justify-center gap-4 regular">
+        <div className="flex justify-center md:gap-12 gap-4 regular">
             <div className="flex flex-col items-center">
                 <p className="text-[clamp(2rem,3vw,5rem)]">{days}</p>
                 <span>DAYS</span>
