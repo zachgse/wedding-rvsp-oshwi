@@ -31,25 +31,25 @@ export default function Countdown() {
     )
 
     return (
-        <div className="flex justify-center gap-4">
-            <div>
-                <p className="text-4xl font-bold">{days}</p>
-                <span>Days</span>
+        <div className="flex justify-center gap-4 regular">
+            <div className="flex flex-col items-center">
+                <p className="text-[clamp(2rem,3vw,5rem)]">{days}</p>
+                <span>DAYS</span>
             </div>
 
-            <div>
-                <p className="text-4xl font-bold">{hours}</p>
-                <span>Hours</span>
+            <div className="flex flex-col items-center">
+                <p className="text-[clamp(2rem,3vw,5rem)]">{hours}</p>
+                <span>HOURS</span>
             </div>
 
-            <div>
-                <p className="text-4xl font-bold">{minutes}</p>
-                <span>Minutes</span>
+            <div className="flex flex-col items-center">
+                <p className="text-[clamp(2rem,3vw,5rem)]">{minutes}</p>
+                <span>MINUTES</span>
             </div>
 
-            <div>
-                <p className="text-4xl font-bold">{seconds}</p>
-                <span>Seconds</span>
+            <div className="flex flex-col items-center">
+                <p className="text-[clamp(2rem,3vw,5rem)]">{seconds}</p>
+                <span>SECONDS</span>
             </div>
         </div>
     )

@@ -16,16 +16,11 @@ export default function Initial({setIsClicked}:InitialProps) {
         <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 flex flex-col min-h-screen items-center justify-around text-white">
-            <div>
-                <span className="block regular text-[clamp(1rem,1.25vw,3rem)] tracking-widest leading-none">
-                    A LOVE LETTER FROM
-                </span>
-
-                <span className="block cursive text-[clamp(5rem,8vw,10rem)] leading-none -translate-y-[2vw]">
-                    Claribel & Josh
-                </span>
+            <div className="flex flex-col gap-8 justify-center items-center">
+                <p className="block regular text-[clamp(1rem,1.25vw,3rem)] tracking-widest leading-none">A LOVE LETTER FROM</p>
+                <p className="block cursive text-[clamp(5rem,8vw,10rem)] leading-none">Claribel & Josh</p>
             </div>
-            <div className="relative mx-auto w-[60%] max-w-[500px]">
+            <div className="relative mx-auto w-[60%] max-w-[800px]">
                 <Image src="/assets/envelope-before.webp"
                     loading="eager"
                     width={1900} height={1300}
@@ -37,7 +32,7 @@ export default function Initial({setIsClicked}:InitialProps) {
                     className="absolute left-1/2 top-1/2 z-40 h-auto w-[30%] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                     alt="Envelope button"/>
                 <Image src="/assets/flower01.webp" width={500} height={500}
-                    className="absolute bottom-0 left-[-35%] z-20 h-auto w-[60%] -rotate-30"
+                    className="absolute bottom-0 left-[-32%] z-20 h-auto w-[60%] -rotate-15"
                     alt="Flower"/>
                 <Image src="/assets/flower02.webp" width={500} height={500}
                     className="absolute top-[-18%] right-[-15%] z-50 h-auto w-[30%] -rotate-30"

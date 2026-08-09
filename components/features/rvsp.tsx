@@ -34,19 +34,19 @@ export default function Rvsp() {
                             xl:-top-36 md:-top-40 -top-26"/> 
                 </div>
                 <div className="flex items-end md:gap-8 gap-0 z-50">
-                    <div className="w-1/2 flex justify-end">
+                    <a target="_blank" href="https://forms.gle/QuqXwLep8NJVQvZbA" className="w-1/2 flex justify-end">
                         <Image alt="RSVP" src="/assets/rsvp.webp" width={700} height={500}
                             className="h-auto -rotate-15 
                                     xl:w-[40%] lg:w-[60%] md:w-[80%] w-full"/>
-                    </div>
+                    </a>
                     <div className="w-1/2 flex justify-start mb-12">
                         <Image alt="Details" src="/assets/details.webp" width={1200} height={1800}
                             className="h-auto rotate-10
                                     xl:w-[40%] lg:w-[60%] md:w-[80%] w-full"/>
                     </div>
                 </div>
-                <div className="md:w-2/5 w-full h-40 rounded-xl bg-white mx-auto flex flex-col items-center p-4">
-                    <p>See you in</p>
+                <div className="w-full h-40 mx-auto flex flex-col items-center p-4 text-white">
+                    <p className="cursive text-[clamp(2rem,3vw,5rem)]">See you in</p>
                     <Countdown/>
                 </div>
             </div>
