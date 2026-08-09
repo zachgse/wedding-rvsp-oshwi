@@ -16,11 +16,15 @@ export default function Initial({setIsClicked}:InitialProps) {
         <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 flex flex-col min-h-screen items-center justify-around text-white">
-            <div className="flex flex-col items-center justify-center gap-4">
-                <p>A LOVE LETTER FROM</p>
-                <p className="text-6xl">Claribel and Josh</p>
+            <div>
+                <span className="block regular text-[clamp(1rem,1.25vw,3rem)] tracking-widest leading-none">
+                    A LOVE LETTER FROM
+                </span>
+
+                <span className="block cursive text-[clamp(5rem,8vw,10rem)] leading-none -translate-y-[2vw]">
+                    Claribel & Josh
+                </span>
             </div>
-            
             <div className="relative mx-auto w-[60%] max-w-[500px]">
                 <Image src="/assets/envelope-before.webp"
                     loading="eager"
@@ -30,7 +34,7 @@ export default function Initial({setIsClicked}:InitialProps) {
                 <Image onClick={() => setIsClicked(true)}
                     src="/assets/envelope-button.webp"
                     width={500} height={500}
-                    className="absolute left-1/2 top-1/2 z-40 h-auto w-[16%] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+                    className="absolute left-1/2 top-1/2 z-40 h-auto w-[30%] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                     alt="Envelope button"/>
                 <Image src="/assets/flower01.webp" width={500} height={500}
                     className="absolute bottom-0 left-[-35%] z-20 h-auto w-[60%] -rotate-30"
@@ -43,7 +47,7 @@ export default function Initial({setIsClicked}:InitialProps) {
                     alt="Flower"/>
             </div>
 
-            <p className="text-3xl">(TAP THE ENVELOPE TO OPEN)</p>
+            <p className="regular text-[clamp(1rem,1.25vw,3rem)] tracking-widest">(TAP THE ENVELOPE TO OPEN)</p>
         </div>
 
     </section>

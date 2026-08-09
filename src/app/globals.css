@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Luxurious";
+    src: url("/assets/fonts/LuxuriousScript-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cursive {
+    font-family: "Luxurious", sans-serif;
+}
+
+.regular {
+    font-family: "Montserrat", sans-serif;
+}
