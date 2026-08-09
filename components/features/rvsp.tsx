@@ -4,21 +4,21 @@ import Countdown from "./countdown"
 export default function Rvsp() {
     return (
         <section className="relative min-h-screen overflow-hidden px-12">
-            <Image src="/assets/bg.jpg" alt="bg" width={1920} height={1080} loading="eager" className="absolute inset-0 h-full w-full bg-local"/>
+            <Image src="/assets/bg.jpg" alt="bg" width={1920} height={1080} loading="eager" className="absolute inset-0 h-full w-full object-cover"/>
 
             <div className="relative z-10 min-h-screen
                             flex flex-col justify-center z-50 mx-auto gap-12 mt-24">
                 <div className="relative"> 
                     <Image alt="Flower" src="/assets/flower01.webp" width={500} height={500} 
                             className="h-auto absolute z-40 rotate-28 
-                            xl:w-[30%] md:w-[40%] w-[80%] 
-                            xl:left-[10%] lg:-left-[2%] md:-left-[5%] -left-[25%] 
-                            xl:-top-48 lg:-top-40 -top-28"/> 
+                            xl:w-[20%] md:w-[30%] w-[60%] 
+                            xl:left-[16%] lg:-left-[2%] md:-left-[5%] -left-[20%] 
+                            xl:-top-48 lg:-top-40 -top-20"/> 
                     <Image alt="Flower" src="/assets/flower04.webp" width={270} height={600} 
                             className="h-auto absolute -translate-x-1/2 z-40 -rotate-16 
-                            xl:w-[15%] md:w-[20%] w-[35%]
-                            xl:left-[26%] lg:left-[21%] md:left-[17%] left-[15%]
-                            xl:-top-24 lg:-top-24 md:-top-14 -top-12"/> 
+                            xl:w-[10%] md:w-[20%] w-[35%]
+                            xl:left-[26%] lg:left-[21%] md:left-[17%] left-[10%]
+                            xl:-top-24 lg:-top-24 md:-top-14 -top-11"/> 
                     <Image alt="Envelope open" src="/assets/envelope-open.webp" width={1900} height={1300} 
                             className="h-auto absolute -translate-x-1/2 -rotate-10 z-40 
                             xl:w-[30%] lg:w-[40%] md:w-[50%] w-[80%] 
