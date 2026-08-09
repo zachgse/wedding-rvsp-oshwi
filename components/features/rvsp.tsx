@@ -4,7 +4,7 @@ import Countdown from "./countdown"
 export default function Rvsp() {
     return (
         <section className="relative min-h-screen overflow-hidden px-12">
-            <Image src="/assets/bg.jpg" alt="bg" width={1920} height={1080} className="absolute inset-0 h-full w-full bg-local"/>
+            <Image src="/assets/bg.jpg" alt="bg" width={1920} height={1080} loading="eager" className="absolute inset-0 h-full w-full bg-local"/>
 
             <div className="relative z-10 min-h-screen
                             flex flex-col justify-center z-50 mx-auto gap-12 mt-24">
