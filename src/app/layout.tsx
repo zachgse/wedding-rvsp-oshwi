@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${WEBSITE_URL}/assets/envelope-button.webp`,
-        width: 1200,
-        height: 630,
+        width: 500,
+        height: 500,
         alt: "Wedding Invitation",
       },
     ],
