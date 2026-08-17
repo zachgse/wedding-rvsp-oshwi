@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const WEBSITE_URL=process.env.WEBSITE_URL
+
 export const metadata: Metadata = {
   title: "Wedding Invitation",
   description: "Wedding Invitation of Claribel & Josh",
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
     description: "Wedding Invitation of Claribel & Josh",
     images: [
       {
-        url: "/assets/envelope-button.webp",
+        url: `${WEBSITE_URL}/assets/envelope-button.webp`,
         width: 1200,
         height: 630,
         alt: "Wedding Invitation",
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    images: ["/assets/envelope-button.webp"],
+    images: [`${WEBSITE_URL}/assets/envelope-button.webp`],
   },
 };
 
